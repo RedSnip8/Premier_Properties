@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,13 +13,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
     <title>Premier Properties</title>
   </head>
   <body>
-    <!-- START HERE-->
+    <!-- Top Bar -->
+    {% include 'partials/_topbar.html' %}
+
+    <!-- Navbar -->
+    {% include 'partials/_navbar.html' %}
+
+    <!-- Page Content-->
     {% block content %}
     {% endblock %}
-    <!-- SCRIPT HERE-->
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+
+    <!-- Scripts -->
     <script
       src="http://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -34,10 +47,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // Get Current Year for copyright
-      $("#year").text(new Date().getFullYear());
-    </script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

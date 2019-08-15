@@ -1,3 +1,13 @@
+#main-nav-bar {
+  background: #fffff0;
+  color: #c1555f;
+}
+
+
+#main-nav-bar .navbar-nav ul li a{
+  color: #c1555f;
+  }
+
 .btn-secondary {
   color: #fff !important;
 }
@@ -6,8 +16,9 @@ img {
   width: 100%;
 }
 
-.logo {
-  width: 80px;
+img.logo {
+  height: 50px;
+  width: 50px;
 }
 
 .navbar {
