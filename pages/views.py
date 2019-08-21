@@ -5,3 +5,6 @@ def index(request):
 
 def about(request):
   return render(request, 'pages/about.html')
+
+def sell(request):
+  return render(request, 'pages/sell.html')
