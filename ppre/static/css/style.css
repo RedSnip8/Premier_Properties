@@ -1,0 +1,181 @@
+
+/*
+Theme Colors
+  Purple Primary:  #5b5f97
+  Green Secondary: #70a37f
+  Orange Secondary:#9e483a
+  Black:           #000
+  White:           #fff
+*/
+
+.btn-secondary {
+  color: #fff !important;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 80px;
+}
+
+.navbar {
+  opacity: 0.95;
+  text-transform: uppercase;
+}
+
+#top-bar {
+  opacity: 0.85;
+  background-color: #70a37f;
+  color: #fff;
+}
+
+.social a {
+  margin-right: 0.4rem;
+  color: #fff;
+}
+
+.sticky-offset {
+  top: 105px;
+}
+
+#showcase {
+  background: url(../img/premier_showcase.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 650px;
+  color: #fff;
+  padding-top: 6rem;
+}
+#showcase .home-search {
+  min-height: 400px;
+  position: relative;
+  border-radius: 5px;
+}
+#showcase .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.9);
+}
+
+#showcase-inner {
+  background: url(../img/chicago_downtown.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+#showcase-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+#showcase-inner.showcase-search {
+  min-height: 270px;
+}
+
+#services {
+  background: url(../img/chicago_downtown.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#work {
+  padding: 6rem 0;
+}
+
+.listing-preview a {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  #showcase {
+    padding-top: 4rem;
+  }
+  #showcase h1 {
+    font-size: 40px;
+  }
+  .hide-md-down {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    padding-top: 3rem;
+  }
+  #showcase h1 {
+    font-size: 40px;
+  }
+  #showcase p {
+    display: none;
+  }
+  #top-bar {
+    text-align: center;
+  }
+  #top-bar .social {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+  #showcase-inner h1 {
+    font-size: 40px;
+  }
+}
+
+.bg-purple , .btn-purple {
+  background-color: #5b5f97;
+}
+
+.bg-green , .btn-green {
+  background-color: #70A37f;
+}
+
+.bg-orange , .btn-orange {
+  background-color: #9e483a;
+}
+
+.text-purple {
+  color: #5b5f97;
+}
+
+.text-green {
+  color: #70a37f;
+}
+
+.text-orange {
+  color: #9e483a;
+}
