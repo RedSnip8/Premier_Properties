@@ -1,5 +1,114 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-<h1>Sell</h1>
+<section id="showcase-sell" class=" bg-orange py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="d-none d-lg-block display-4">Selling With Premier Properties</h1>
+        <h1 class="d-block d-lg-none display-4">Selling Made Easy</h1>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'index' %}">
+            <i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="breadcrumb-item active"> About</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section id="about" class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Sell Your Home With Peace Of Mind</h2>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        <img src="{% static 'img/sell-img1.jpg' %}" alt="">
+        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae
+          ad saepe ex, amet
+          neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+          commodi id libero eveniet harum perferendis laborum molestias quia.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex,
+          amet
+          neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+          commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+      </div>
+      <!-- Seller of The Month -->
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/realtors/kyle.jpg" alt="Seller of the month">
+          <div class="card-body">
+            <h5 class="card-title">Seller Of The Month</h5>
+            <h6 class="text-secondary">Kyle Brown</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt amet, illo
+              itaque similique repellat.
+              content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--WHY US?-->
+    <div class="row">
+      <div class="col-md-6">
+        <i class="mt-3 d-block fas fa-stopwatch fa-2x text-purple"></i>
+        <h4 class="mt-1 text-orange">Close Fast</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt amet, illo
+          itaque similique repellat.</p>
+      </div>
+      <div class="col-md-6">
+        <i class="mt-3 d-block fas fa-users fa-2x text-purple"></i>
+        <h4 class="mt-1 text-orange">Full Support</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt amet, illo
+          itaque similique repellat.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <i class="mt-3 d-block fas fa-eye fa-2x text-purple"></i>
+        <h4 class="mt-1 text-orange">Be Visible</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt amet, illo
+          itaque similique repellat.</p>
+      </div>
+      <div class="col-md-6">
+        <i class="mt-3 d-block fas fa-mug-hot fa-2x text-purple"></i>
+        <h4 class="mt-1 text-orange">Relax</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt amet, illo
+          itaque similique repellat.</p>
+      </div>
+    </div>
+    <hr>
+    <!--Links-->
+    <div class="row">
+      <div class="p-2 col-md-6 text-center">
+          <h4 class="d-block d-lg-none">Your Perfect Realtor Awaits</h4>
+          <h2 class="d-none d-md-block">Find Your Perfect Realtor Today</h2>
+          <a href="{% url 'about' %}#team" class="btn btn-purple text-white">Meet The Team</a>
+      </div>
+      <div class="p-2 col-md-6 mt-4 text-center">
+          <h4 class="d-block d-lg-none">Find Your Home's Value</h4>
+          <h2 class="d-none d-md-block">Find Out Your Home's Worth </h2>
+          <button class="btn btn-purple text-white" data-toggle="modal" data-target="#inquiryModal">Request A Consultation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Modal Contact-->
+{% include 'partials/_inquiry.html' %}
 {% endblock %}
