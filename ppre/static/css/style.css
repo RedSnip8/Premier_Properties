@@ -154,7 +154,7 @@ a.card-link:hover {
 }
 
 .card-link-active .card-body{
-  background-color: #70a37fa9;
+  background-color: #797a8fa1;
   color: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
