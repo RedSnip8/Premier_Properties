@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from realtors.models import Realtor
-
+from .choices import neighborhood_choice
 class Listing(models.Model):
     PROPERTY_TYPES = (
         ('SFR', 'House'),
@@ -13,10 +13,10 @@ class Listing(models.Model):
     )
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)
-    neighborhood = models.CharField(max_length=200, blank=True)
+    neighborhood = models.CharField(max_length=200, choices=neighborhood_choice.items())
     address = models.CharField(max_length=200)
-    city = models.CharField(max_length=100)
-    state = models.CharField(max_length=100)
+    city = models.CharField(default="Chicago", max_length=100)
+    state = models.CharField(default='IL', max_length=100)
     zipcode = models.CharField(max_length=20)
     build_type = models.CharField(max_length=4, choices=PROPERTY_TYPES)
     description = models.TextField(blank=True)
