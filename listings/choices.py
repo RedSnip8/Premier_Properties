@@ -121,12 +121,3 @@ neighborhood_choice = {
     'Wrigleyville': 'Wrigleyville',
     'Wrigtwood': 'Wrigtwood',
 }
-
-building_choices = {
-    "SFR": 'Single Family',
-    "CNDO": "Condo",
-    "TWNH": "Townhouse",
-    "MFR": "Multi-Family",
-    "LND": "Land",
-    "OTHR": "Other",
-    }
