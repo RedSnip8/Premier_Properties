@@ -18,9 +18,10 @@
           <form action="{% url 'search' %}">
             <!-- Form Row 1 -->
             <div class="form-row">
-              <div class="col mb-3">
+              <div class="col mb-3 form-group position-relative">
                 <label class="sr-only">Keywords</label>
                 <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)">
+                <span class="form-clear d-none"><i class="fas fa-times"></i></span>
               </div>
 
               <div class="col-md-4 mb-3">
