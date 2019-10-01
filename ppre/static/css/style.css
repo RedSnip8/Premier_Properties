@@ -25,6 +25,16 @@ img {
   text-transform: uppercase;
 }
 
+#bc a {
+  color: #70A37f;
+}
+
+.img-profile {
+  width: auto ;
+  max-height: 200px;
+  object-fit: cover;
+}
+
 #top-bar {
   opacity: 0.85;
   background-color: #70a37f;
@@ -223,4 +233,8 @@ a.card-link:hover {
 
 .text-orange {
   color: #9e483a;
+}
+
+.badge-green {
+  background-color: #70a37fbe;
 }
