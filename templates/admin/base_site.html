@@ -1,0 +1,19 @@
+{% extends 'admin/base.html' %}
+
+{% load static %}
+
+{% block branding %}
+<h1 id="head">
+  <img
+    src="{% static 'img/premier_logo_big.png' %}"
+    alt="Premier Properties"
+    class="brand_img"
+    height="75"
+    width="75"
+    />
+  Employee Access
+</h1>
+{% endblock %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}" />
+{% endblock %}
